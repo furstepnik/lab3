@@ -1,2 +1,4 @@
-package bmstu;public class AirportApp {
+package bmstu;
+
+public class AirportApp {
 }
