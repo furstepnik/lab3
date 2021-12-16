@@ -25,7 +25,7 @@ public class AirportApp {
             String airportID = column[ID_INDEX];
         });
 
-        JavaPairRDD<Tuple2<String. String>, >
+        JavaPairRDD<Tuple2<String. String>, Flight>
 
 
 
