@@ -1,2 +1,4 @@
-package bmstu;public class Flight {
+package bmstu;
+
+public class Flight {
 }
