@@ -1,6 +1,7 @@
 package bmstu;
 
 import org.apache.spark.SparkConf;
+import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 
@@ -15,7 +16,9 @@ public class AirportApp {
         JavaRDD<String> flightsInput = sc.textFile(FLIGHTS_FILE);
         JavaRDD<String> airportInput = sc.textFile(AIRPORT_FILE);
 
-        
+        JavaPairRDD<String, String> airportsMap = airportInput.mapToPair(row -> {
+            
+        })
 
 
 
