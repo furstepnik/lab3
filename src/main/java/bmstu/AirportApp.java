@@ -25,7 +25,10 @@ public class AirportApp {
             String airportID = column[ID_INDEX];
         });
 
-        JavaPairRDD<Tuple2<String. String>, Flight>
+        JavaPairRDD<Tuple2<String. String>, Flight> flightParse = flightsInput.mapToPair(row -> {
+            String[] column = row.split(SEPARATOR);
+            
+        })
 
 
 
