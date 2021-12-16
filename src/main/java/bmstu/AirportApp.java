@@ -9,6 +9,8 @@ public class AirportApp {
     private static final String FLIGHTS_FILE = "664600583_T_ONTIME_sample.csv";
     private static final String AIRPORT_FILE = "L_AIRPORT_ID.csv";
     private static final String SEPARATOR = ",";
+    private static final int ID_INDEX = 0;
+    private static final int AIRPORT_NAME_INDEX = 1;
 
     public static void main(String[] args) {
         SparkConf conf = new SparkConf().setAppName("AirportApp");
@@ -19,8 +21,11 @@ public class AirportApp {
 
         JavaPairRDD<String, String> airportsMap = airportInput.mapToPair(row -> {
             String[] column = row.split(SEPARATOR);
-            
-        })
+            String airportName = column[AIRPORT_NAME_INDEX];
+            String airportID = column[ID_INDEX];
+        });
+
+        JavaPairRDD<Tuple2<String. String>, >
 
 
 
