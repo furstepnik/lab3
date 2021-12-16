@@ -2,5 +2,5 @@ package bmstu;
 
 public class AirportApp {
 
-    public static void main()
+    public static void main(String[] )
 }
