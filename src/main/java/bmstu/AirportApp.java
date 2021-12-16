@@ -11,7 +11,8 @@ public class AirportApp {
     private static final String SEPARATOR = ",";
     private static final int ID_INDEX = 0;
     private static final int AIRPORT_NAME_INDEX = 1;
-    private static final int DEPARTURE_ID = 
+    private static final int DEPARTURE_ID = 11;
+    private static final int 
 
     public static void main(String[] args) {
         SparkConf conf = new SparkConf().setAppName("AirportApp");
